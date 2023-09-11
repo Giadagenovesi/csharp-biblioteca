@@ -29,5 +29,13 @@ namespace csharp_biblioteca
             this.CognomeAutore = cognomeAutore; 
         }
 
+        //Metodi
+        public virtual void StampaInfo()
+        {
+            Console.WriteLine($@"Documento {this.Titolo}:
+                                - Anno di pubblicazione: {this.Anno}
+                                - Autore: {this.NomeAutore} {this.CognomeAutore}");
+        }
+
     }
 }
